@@ -9,5 +9,5 @@ router.get("/") { request, response, next in
 }
 initializePostRoutes(router: router)
 
-Kitura.addHTTPServer(onPort: 8081, with: router)
+Kitura.addHTTPServer(onPort: 8080, with: router)
 Kitura.run()
