@@ -15,12 +15,22 @@ var posts: [Post] = [Post(id: UUID(), caption: "Caption \(index)", createdAt: Da
 @available(macOS 10.12, *)
 func initializePostRoutes(router: Router) {
     router.get("/api/v1/posts", handler: getPosts)
+    router.post("/api/v1/posts", handler: addPost)
     router.decoders[.json] = iso8001Decoder
     router.encoders[.json] = iso8601Encoder
 }
 
 func getPosts(completion: @escaping ([Post]?, RequestError?) -> Void) {
     completion(posts, nil)
+}
+
+func addPost(post: Post, completion: @escaping (Post?, RequestError?) -> Void) {
+    var newPost = post
+    if newPost.id == nil {
+        newPost.id = UUID()
+    }
+    posts.append(newPost)
+    completion(newPost, nil)
 }
 
 @available(macOS 10.12, *)

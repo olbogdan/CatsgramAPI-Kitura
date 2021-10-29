@@ -4,7 +4,7 @@ import Kitura
 let router = Router()
 
 router.get("/") { request, response, next in
-    response.send("Hello world!")
+    response.send("Hello cats!")
     next()
 }
 initializePostRoutes(router: router)
