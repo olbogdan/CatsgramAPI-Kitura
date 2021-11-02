@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		68F3A24027315D4B009C5B1A /* UserRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F3A23F27315D4B009C5B1A /* UserRoutes.swift */; };
 		68FFBE4F272C0A8600E99A9C /* PostRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FFBE4D272C066200E99A9C /* PostRoutes.swift */; };
 		68FFBE50272C0A8D00E99A9C /* UserAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FFBE4A272C062E00E99A9C /* UserAuthentication.swift */; };
 		68FFBE51272C0A9100E99A9C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FFBE49272C062E00E99A9C /* Post.swift */; };
@@ -477,6 +478,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		68F3A23F27315D4B009C5B1A /* UserRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRoutes.swift; sourceTree = "<group>"; };
 		68FFBE49272C062E00E99A9C /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		68FFBE4A272C062E00E99A9C /* UserAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAuthentication.swift; sourceTree = "<group>"; };
 		68FFBE4D272C066200E99A9C /* PostRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRoutes.swift; sourceTree = "<group>"; };
@@ -1029,7 +1031,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -1038,7 +1040,6 @@
 				OBJ_13 /* Dependencies */,
 				OBJ_169 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_51 /* bodyParser */ = {
@@ -1123,6 +1124,7 @@
 			children = (
 				OBJ_9 /* main.swift */,
 				68FFBE4D272C066200E99A9C /* PostRoutes.swift */,
+				68F3A23F27315D4B009C5B1A /* UserRoutes.swift */,
 			);
 			name = CatsgramAPI;
 			path = Sources/CatsgramAPI;
@@ -1610,7 +1612,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_169 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1660,6 +1662,7 @@
 				OBJ_199 /* main.swift in Sources */,
 				68FFBE4F272C0A8600E99A9C /* PostRoutes.swift in Sources */,
 				68FFBE51272C0A9100E99A9C /* Post.swift in Sources */,
+				68F3A24027315D4B009C5B1A /* UserRoutes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

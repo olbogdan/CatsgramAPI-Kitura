@@ -8,6 +8,7 @@ router.get("/") { request, response, next in
     next()
 }
 initializePostRoutes(router: router)
+initializeUserRoutes(router: router)
 
 Kitura.addHTTPServer(onPort: 8080, with: router)
 Kitura.run()
