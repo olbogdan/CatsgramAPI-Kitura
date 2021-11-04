@@ -10,7 +10,7 @@ import Kitura
 
 func initializeImageRoutes(router: Router) throws {
   let fileServer = try setupFileServer()
-  router.get("/api/v1/images", middleware: fileServer)
+  router.get("/api/v1/image", middleware: fileServer)
 
   router.post("/api/v1/image") { request, response, next in
     defer { next() }
