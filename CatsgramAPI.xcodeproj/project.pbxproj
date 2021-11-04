@@ -22,6 +22,7 @@
 
 /* Begin PBXBuildFile section */
 		68F3A24027315D4B009C5B1A /* UserRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F3A23F27315D4B009C5B1A /* UserRoutes.swift */; };
+		68F3A2462731882C009C5B1A /* ImageRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F3A2452731882C009C5B1A /* ImageRoutes.swift */; };
 		68FFBE4F272C0A8600E99A9C /* PostRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FFBE4D272C066200E99A9C /* PostRoutes.swift */; };
 		68FFBE50272C0A8D00E99A9C /* UserAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FFBE4A272C062E00E99A9C /* UserAuthentication.swift */; };
 		68FFBE51272C0A9100E99A9C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FFBE49272C062E00E99A9C /* Post.swift */; };
@@ -479,6 +480,7 @@
 
 /* Begin PBXFileReference section */
 		68F3A23F27315D4B009C5B1A /* UserRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRoutes.swift; sourceTree = "<group>"; };
+		68F3A2452731882C009C5B1A /* ImageRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRoutes.swift; sourceTree = "<group>"; };
 		68FFBE49272C062E00E99A9C /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		68FFBE4A272C062E00E99A9C /* UserAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAuthentication.swift; sourceTree = "<group>"; };
 		68FFBE4D272C066200E99A9C /* PostRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRoutes.swift; sourceTree = "<group>"; };
@@ -1125,6 +1127,7 @@
 				OBJ_9 /* main.swift */,
 				68FFBE4D272C066200E99A9C /* PostRoutes.swift */,
 				68F3A23F27315D4B009C5B1A /* UserRoutes.swift */,
+				68F3A2452731882C009C5B1A /* ImageRoutes.swift */,
 			);
 			name = CatsgramAPI;
 			path = Sources/CatsgramAPI;
@@ -1663,6 +1666,7 @@
 				68FFBE4F272C0A8600E99A9C /* PostRoutes.swift in Sources */,
 				68FFBE51272C0A9100E99A9C /* Post.swift in Sources */,
 				68F3A24027315D4B009C5B1A /* UserRoutes.swift in Sources */,
+				68F3A2462731882C009C5B1A /* ImageRoutes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
