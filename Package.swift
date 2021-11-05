@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "CatsgramAPI",
     dependencies: [
-        .package(url: "https://github.com/Kitura/Kitura", from: "2.8.0")
+        .package(url: "https://github.com/Kitura/Kitura", from: "2.9.200")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
