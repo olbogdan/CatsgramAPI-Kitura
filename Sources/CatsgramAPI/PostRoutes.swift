@@ -8,9 +8,16 @@ import Foundation
 import Kitura
 import KituraContracts
 
-var posts: [Post] = [Post(id: UUID(), caption: "Caption \(index)", createdAt: Date(), createdBy: "User \(index)"),
-                     Post(id: UUID(), caption: "Caption \(index)", createdAt: Date(), createdBy: "User \(index)"),
-                     Post(id: UUID(), caption: "Caption \(index)", createdAt: Date(), createdBy: "User \(index)")]
+var posts: [Post] = [
+    Post(id: UUID(uuidString: "87F1A26A-5B48-40F4-9534-6FEB6EC67954"), caption: "Caption 1", createdAt: Date(), createdBy: "User 1"),
+    Post(id: UUID(), caption: "Caption 2", createdAt: Date(), createdBy: "User 2"),
+    Post(id: UUID(), caption: "Caption 3", createdAt: Date(), createdBy: "User 3")
+]
+
+var likes: [Like] = [
+    Like(id: UUID(), postId: UUID(uuidString: "87F1A26A-5B48-40F4-9534-6FEB6EC67954")!, cratedByUser: "user 1", cratedAt: Date()),
+    Like(id: UUID(), postId: UUID(uuidString: "87F1A26A-5B48-40F4-9534-6FEB6EC67954")!, cratedByUser: "user 2", cratedAt: Date())
+]
 
 @available(macOS 10.12, *)
 func initializePostRoutes(router: Router) {
@@ -21,6 +28,13 @@ func initializePostRoutes(router: Router) {
 }
 
 func getPosts(completion: @escaping ([Post]?, RequestError?) -> Void) {
+    let posts = posts.map { post -> Post in
+        var post = post
+        post.isLiked = likes.contains { like in
+            like.postId == post.id
+        }
+        return post
+    }
     completion(posts, nil)
 }
 
