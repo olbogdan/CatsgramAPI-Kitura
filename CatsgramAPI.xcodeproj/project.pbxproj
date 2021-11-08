@@ -25,6 +25,7 @@
 		689A8E4427358AB1008B75CB /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689A8E4227358AB1008B75CB /* Post.swift */; };
 		689A8E4A273590B5008B75CB /* Kitura in Frameworks */ = {isa = PBXBuildFile; productRef = 689A8E49273590B5008B75CB /* Kitura */; };
 		689A91AB2738815C008B75CB /* Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689A91AA2738815C008B75CB /* Like.swift */; };
+		689A91B1273935A2008B75CB /* LikeRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689A91B0273935A2008B75CB /* LikeRoutes.swift */; };
 		OBJ_193 /* http_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_102 /* http_parser.c */; };
 		OBJ_194 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_103 /* utils.c */; };
 		OBJ_196 /* utils.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_105 /* utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -484,6 +485,7 @@
 		689A8E4127358AB1008B75CB /* UserAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAuthentication.swift; sourceTree = "<group>"; };
 		689A8E4227358AB1008B75CB /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		689A91AA2738815C008B75CB /* Like.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Like.swift; sourceTree = "<group>"; };
+		689A91B0273935A2008B75CB /* LikeRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeRoutes.swift; sourceTree = "<group>"; };
 		"CatsgramAPI::CatsgramAPI::Product" /* CatsgramAPI */ = {isa = PBXFileReference; lastKnownFileType = text; path = CatsgramAPI; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CatsgramAPI::CatsgramAPITests::Product" /* CatsgramAPITests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = CatsgramAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Kitura-TemplateEngine::KituraTemplateEngine::Product" /* KituraTemplateEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KituraTemplateEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1148,6 +1150,7 @@
 				OBJ_9 /* ImageRoutes.swift */,
 				OBJ_10 /* PostRoutes.swift */,
 				OBJ_11 /* UserRoutes.swift */,
+				689A91B0273935A2008B75CB /* LikeRoutes.swift */,
 				OBJ_12 /* main.swift */,
 			);
 			name = CatsgramAPI;
@@ -1677,6 +1680,7 @@
 			files = (
 				689A8E4327358AB1008B75CB /* UserAuthentication.swift in Sources */,
 				689A91AB2738815C008B75CB /* Like.swift in Sources */,
+				689A91B1273935A2008B75CB /* LikeRoutes.swift in Sources */,
 				OBJ_205 /* ImageRoutes.swift in Sources */,
 				OBJ_206 /* PostRoutes.swift in Sources */,
 				689A8E4427358AB1008B75CB /* Post.swift in Sources */,

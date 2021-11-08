@@ -14,11 +14,6 @@ var posts: [Post] = [
     Post(id: UUID(), caption: "Caption 3", createdAt: Date(), createdBy: "User 3")
 ]
 
-var likes: [Like] = [
-    Like(id: UUID(), postId: UUID(uuidString: "87F1A26A-5B48-40F4-9534-6FEB6EC67954")!, cratedByUser: "user 1", cratedAt: Date()),
-    Like(id: UUID(), postId: UUID(uuidString: "87F1A26A-5B48-40F4-9534-6FEB6EC67954")!, cratedByUser: "user 2", cratedAt: Date())
-]
-
 @available(macOS 10.12, *)
 func initializePostRoutes(router: Router) {
     router.get("/api/v1/posts", handler: getPosts)

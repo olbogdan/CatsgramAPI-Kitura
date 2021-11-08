@@ -13,12 +13,15 @@ if #available(macOS 10.12, *) {
 } else {
     // Fallback on earlier versions
 }
+
 if #available(macOS 10.12, *) {
     initializePostRoutes(router: router)
 } else {
     // Fallback on earlier versions
 }
+
 initializeUserRoutes(router: router)
+initializeLikeRoutes(router: router)
 try initializeImageRoutes(router: router)
 
 Kitura.addHTTPServer(onPort: 8080, with: router)
