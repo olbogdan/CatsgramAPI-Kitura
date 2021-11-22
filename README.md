@@ -1,3 +1,4 @@
 # CatsgramAPI
 
-A description of this package.
+Proof of concept: backend written in swift with Kitura.
+client: https://github.com/olbogdanov/Catsgram
